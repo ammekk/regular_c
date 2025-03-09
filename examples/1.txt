@@ -1,0 +1,8 @@
+input = read();
+while(flip_coin()){
+    input = read();
+}
+assert(input == '0');
+input = read();
+assert(input == EOF);
+return true;

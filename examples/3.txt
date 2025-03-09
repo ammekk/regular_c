@@ -1,0 +1,13 @@
+input = read();
+while(input == '1'){
+    input = read();
+    assert(input == '0');
+    input = read();
+    if(input == '1'){
+        return false;
+    }
+    else{
+        input = read();
+    }
+}
+return input == EOF;

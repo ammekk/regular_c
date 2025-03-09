@@ -1,0 +1,9 @@
+input = read();
+if((input == '1' and input == '1')){
+    input = read();
+}
+else{
+    input = read();
+}
+assert(not (input == '1') or input == '0');
+return true;
