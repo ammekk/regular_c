@@ -1,4 +1,5 @@
 
+import scala.collection.immutable.HashMap
 import scala.io.Source
 object Main extends App{
   def parseNFA(code: String): Seq[NFAParsed] = {
@@ -15,5 +16,6 @@ object Main extends App{
     domainArg.substring(1, domainArg.length() - 1).split(',').toList
   }
   val parsed = parseNFA(readFile(args(0))).head
-  print(parsed)
+  val CFG = ControlFlowGraphFunctions.makeGraph(parsed.statements)
+  CFG.visualizeGraph("ControlFlowGraph")
 }

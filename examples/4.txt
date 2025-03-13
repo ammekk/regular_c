@@ -1,0 +1,28 @@
+input = read();
+if(input == '1'){
+  assert(input == '2');
+  if(input == '3'){
+    input = read();	
+  }
+  else{
+    input = read();
+  }	        
+}
+else{
+  if(input == '4'){
+    assert(input == '5');
+    input = read();
+    if(input == '6'){
+      assert(input == '7');
+    }		
+  }
+}
+if(flip_coin()){
+  while(input == '8'){
+    input = read();
+  }
+}
+assert(input == '9');
+input = read();
+assert(input == EOF);
+return true;

@@ -1,13 +1,15 @@
 input = read();
-while(input == '1'){
-    input = read();
-    assert(input == '0');
-    input = read();
-    if(input == '1'){
-        return false;
-    }
-    else{
-        input = read();
-    }
+if(input == '1'){
+  assert(input == '0');        
 }
-return input == EOF;
+else{
+  assert(input == '1');
+}
+input = read();  
+while(flip_coin()){
+  input = read();
+}
+assert(input == '1');
+input = read();
+assert(input == EOF);
+return true;

@@ -1,0 +1,16 @@
+input = read();
+while(input == '1'){
+  input = read();
+  while(input == '2'){
+    input = read();
+  }
+  assert(input == '3');
+  while(input == '4'){
+    input = read();
+    while(input == '5'){
+      input = read();
+      assert(input == '6');
+    }
+  }
+}
+return true;
